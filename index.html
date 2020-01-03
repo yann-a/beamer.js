@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    
+    <meta name="description" content="" />
+    <meta name="author" content="Yann Aguettaz" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="flides">
+	<!------------------------------------------------ Insert slides here ------------------------------------------------>
+	<!-- A slide is a div with class .step and an unique id; positionned using data-x data-y and data-scale.
+		 Divs can be embeded in .section and .subsection div, named with name attribute
+		 Divs are counted by default. Use .uncounted to exclude a div from numbering. 
+		 Footer is shown by default. Use .nofooter to hide it.
+
+		 Create steps by embeding .slide_step divs in .slide divs.
+		
+		 A slide with #overview_intermediate has all previously shown elements displayed.
+		 A slide with #overview has all elements shown.
+		-->
+
+	<div id="title" class="step nofooter" data-x="0" data-y="0">
+		<h1 style="font-size: 300px;">Titre</h1>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="row">
+		<div id="footerauthor" class="col-2">&nbsp;</div>
+		<div id="footertitle" class="col-3">&nbsp;</div>
+		<div id="footersections" class="col-6">
+			<p id="footersection">&nbsp;</p>
+			<p id="footersubsection">&nbsp;</p>
+		</div>
+		<div id="footerpage" class="col-1">&nbsp;</div>
+	</div>
+</div>
+
+<script src="js/flides.js"></script>
+<script>flides().init();</script> 
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
